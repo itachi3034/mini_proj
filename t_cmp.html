@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechieGuys Innovative Solutions</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f5f5f5;
+        }
+        nav {
+            background: #3a5221;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 12px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero {
+            height: 70vh;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                        url('https://images.unsplash.com/photo-1535223289827-42f1e9919769?w=1500') center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .hero h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        section {
+            padding: 60px 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 35px;
+            color: #0a3d62;
+        }
+
+        .services {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            width: 300px;
+            padding: 25px;
+            margin: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .card h3 {
+            color: #0a3d62;
+        }
+
+        footer {
+            background: #0a3d62;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .contact-form {
+            max-width: 500px;
+            margin: auto;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .contact-form button {
+            background: #0a3d62;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .contact-form button:hover {
+            background: #d0971a;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo"><strong>TechieGuys Innovative Solutions</strong></div>
+        <div>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <div>
+            <h1>Empowering the Next Generation of Tech Professionals</h1>
+            <p>Training • Mentorship • Internships • Innovation</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2 class="title">About Us</h2>
+        <p style="font-size:18px; text-align:center;">
+            TechieGuys Innovative Solutions delivers top-tier training in  
+            <strong>Data Structures & Algorithms, Machine Learning, and Industry Internships.</strong><br><br>
+            Our mission is to prepare students and professionals with real-world skills,  
+            hands-on experience, and strong foundational knowledge to excel in the tech industry.
+        </p>
+    </section>
+
+    <section id="services">
+        <h2 class="title">Our Services</h2>
+        <div class="services">
+
+            <div class="card">
+                <h3>DSA Training</h3>
+                <p>Master problem-solving, algorithms, and coding interview preparation with structured mentoring.</p>
+            </div>
+
+            <div class="card">
+                <h3>Machine Learning Training</h3>
+                <p>Learn ML concepts, build real models, and understand AI workflows using practical datasets.</p>
+            </div>
+
+            <div class="card">
+                <h3>Internship Programs</h3>
+                <p>Work on live industry projects, build your portfolio, and gain hands-on experience.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="title">Contact Us</h2>
+
+        <div class="contact-form">
+            <input type="text" placeholder="Full Name">
+            <input type="email" placeholder="Email">
+            <input type="text" placeholder="Phone Number">
+            <textarea rows="5" placeholder="Your Message"></textarea>
+            <button>Send Message</button>
+        </div>
+    </section>
+
+    <footer>
+        © 2025 TechieGuys Innovative Solutions. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
